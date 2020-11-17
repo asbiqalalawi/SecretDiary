@@ -47,8 +47,6 @@ public class CalenderFragment extends Fragment {
 
         lstStory = new ArrayList<>();
         lstStory.add(new Story("Wed, Nov 11, 2020","Finally..","7:30 AM at Rajabasa Bandar Lampung",R.drawable.lj));
-        lstStory.add(new Story("Wed, Nov 11, 2020","Finally..","7:30 AM at Rajabasa Bandar Lampung",R.drawable.lj));
-        lstStory.add(new Story("Wed, Nov 11, 2020","Finally..","7:30 AM at Rajabasa Bandar Lampung",R.drawable.lj));
 
     }
 }

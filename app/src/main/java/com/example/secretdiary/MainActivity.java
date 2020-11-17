@@ -29,11 +29,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FloatingActionButton fab_add;
+
+
         frameLayout = findViewById(R.id.simpleFrameLayout);
         tabLayout = findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setText("RECENT"));
         tabLayout.addTab(tabLayout.newTab().setText("CALENDER"));
         tabLayout.addTab(tabLayout.newTab().setText("MOOD"));
+
+        fab_add = findViewById(R.id.fab_add);
+
+
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
