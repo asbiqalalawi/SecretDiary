@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Secret Diary</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <string name="masukkan_kata_sandi">masukkan_kata_sandi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simpan">simpan</string>
+    <string name="judul">judul</string>
+    <string name="tulis_cerita">tulis_cerita</string>
+=======
+>>>>>>> 75c43a1d94fec7c74859309f9605eb78e9821ee0
+>>>>>>> abece99... password
 </resources>
