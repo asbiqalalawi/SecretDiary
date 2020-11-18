@@ -1,5 +1,6 @@
 package com.example.secretdiary;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,18 +21,18 @@ import android.widget.FrameLayout;
 import android.widget.Toolbar;
 ;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Toolbar toolbar;
     TabLayout tabLayout;
     FrameLayout frameLayout;
+    private View Fab_add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton Fab_add;
-
+        FloatingActionButton Fab_add ;
 
         frameLayout = findViewById(R.id.simpleFrameLayout);
         tabLayout = findViewById(R.id.tabs);
@@ -40,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("MOOD"));
 
         Fab_add = findViewById(R.id.fab_add);
-
-
+        Fab_add.setOnClickListener((View.OnClickListener) this);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -76,5 +76,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+    @Override
+    public void onClick(View Fab_add){
+        if (Fab_add.getId()== R.id.fab_add) {
+            Intent fab_add = new Intent(MainActivity.this, StoryActivity.class);
+            startActivity(fab_add);
+        }
     }
 }
