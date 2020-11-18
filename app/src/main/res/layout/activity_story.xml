@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,8 +20,8 @@
         tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/img_kembali"
-            android:layout_width="77dp"
+            android:id="@+id/btn_kembali"
+            android:layout_width="50dp"
             android:layout_height="46dp"
             android:layout_gravity="left"
             android:background="@drawable/ic_arrow_back_white_18dp"
@@ -31,7 +31,7 @@
             android:id="@+id/btn_simpanCerita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="215dp"
+            android:layout_marginStart="220dp"
             android:background="@drawable/button"
             android:text="@string/simpan"
             android:textColor="#FFFFFF" />
@@ -50,7 +50,7 @@
             android:id="@+id/et_editJudul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="49dp"
+            android:layout_marginVertical="20dp"
             android:hint="@string/judul"
             android:inputType="text"
             tools:ignore="MissingConstraints" />
@@ -58,7 +58,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_editCerita"
             android:layout_width="match_parent"
-            android:layout_height="477dp"
+            android:layout_height="490dp"
             android:hint="@string/tulis_cerita"
             android:inputType="text" />
 
@@ -102,4 +102,4 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
