@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/frame_container">
+    android:id="@+id/container">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -17,8 +17,7 @@
             app:title="@string/app_name"
             app:titleTextColor="@color/white"
             android:layout_width="match_parent"
-            app:layout_scrollFlags="scroll|enterAlways"
-            android:layout_marginRight="100dp"/>
+            app:layout_scrollFlags="scroll|enterAlways"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
