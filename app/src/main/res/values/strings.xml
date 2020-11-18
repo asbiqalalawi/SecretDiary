@@ -6,4 +6,9 @@
     <string name="simpan">simpan</string>
     <string name="judul">judul</string>
     <string name="tulis_cerita">tulis_cerita</string>
+    <string name="pengingat_diary">Pengingat Diary</string>
+    <string name="my_profil">Profil Saya</string>
+    <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
+    <string name="ubah_tema">Ubah Tema</string>
+    <string name="setting">setting</string>
 </resources>
