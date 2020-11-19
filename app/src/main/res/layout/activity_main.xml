@@ -20,12 +20,12 @@
         app:layout_scrollFlags="scroll|enterAlways">
 
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:src="@drawable/baseline_settings_black_18dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_setting"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@drawable/baseline_settings_white_36dp" />
         </androidx.appcompat.widget.Toolbar>
 
         <com.google.android.material.tabs.TabLayout
