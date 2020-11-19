@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.fragment.app.Fragment;
@@ -20,27 +21,27 @@ import android.widget.FrameLayout;
 import android.widget.Toolbar;
 ;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Toolbar toolbar;
     TabLayout tabLayout;
     FrameLayout frameLayout;
-    public FloatingActionButton Fab_add;
+    private View Fab_add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FloatingActionButton Fab_add ;
+
         frameLayout = findViewById(R.id.simpleFrameLayout);
         tabLayout = findViewById(R.id.tabs);
-
-        Fab_add = (FloatingActionButton) findViewById(R.id.fab_add);
-
         tabLayout.addTab(tabLayout.newTab().setText("RECENT"));
         tabLayout.addTab(tabLayout.newTab().setText("CALENDER"));
         tabLayout.addTab(tabLayout.newTab().setText("MOOD"));
 
-        Fab_add.setOnClickListener(this);
+        Fab_add = findViewById(R.id.fab_add);
+        Fab_add.setOnClickListener((View.OnClickListener) this);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -77,10 +78,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
     }
-
     @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this,StoryActivity.class);
-        startActivity(intent);
+    public void onClick(View Fab_add){
+        if (Fab_add.getId()== R.id.fab_add) {
+            Intent fab_add = new Intent(MainActivity.this, StoryActivity.class);
+            startActivity(fab_add);
+        }
     }
 }
