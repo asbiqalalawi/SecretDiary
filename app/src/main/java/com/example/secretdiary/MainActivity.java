@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.widget.ActionMenuView;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -35,19 +36,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton Fab_add ;
-
         frameLayout = findViewById(R.id.simpleFrameLayout);
         tabLayout = findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setText("RECENT"));
         tabLayout.addTab(tabLayout.newTab().setText("CALENDER"));
         tabLayout.addTab(tabLayout.newTab().setText("MOOD"));
 
-        Fab_add = findViewById(R.id.fab_add);
-        Fab_add.setOnClickListener((View.OnClickListener) this);
+        Fab_add = (FloatingActionButton)findViewById(R.id.fab_add);
+        Btn_setting = (AppCompatButton)findViewById(R.id.btn_setting);
 
-        Btn_setting = findViewById(R.id.btn_setting);
-        Btn_setting.setOnClickListener((View.OnClickListener) this);
+        Fab_add.setOnClickListener(this);
+        Btn_setting.setOnClickListener(this);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -87,11 +86,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
         switch (v.getId()){
             case R.id.fab_add:
-                Intent fab_add = new Intent(MainActivity.this, StoryActivity.class);
-                startActivity(fab_add);
+                Intent intent = new Intent(MainActivity.this, StoryActivity.class);
+                startActivity(intent);
+                break;
             case R.id.btn_setting:
-                Intent btn_setting = new Intent(MainActivity.this, SettingActivity.class);
-                startActivity(btn_setting);
+                Intent intent1 = new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(intent1);
+                break;
         }
     }
 }

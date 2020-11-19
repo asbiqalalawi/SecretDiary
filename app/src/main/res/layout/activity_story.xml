@@ -74,8 +74,6 @@
                 style="@style/IconCerita"
                 android:background="@drawable/ic_add_photo_alternate_black_18dp" />
 
-            
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_font"
                 style="@style/IconCerita"
