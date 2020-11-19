@@ -32,10 +32,10 @@ public class PasswordActivity extends AppCompatActivity implements View.OnClickL
                 Intent oke = new Intent(PasswordActivity.this, MainActivity.class);
                 startActivity(oke);
                 break;
-            case R.id.lupaPass:
-                Intent lupaPass =  new Intent(PasswordActivity.this, MoodFragment.class);
-                startActivity(lupaPass);
-                break;
+//            case R.id.lupaPass:
+//                Intent lupaPass =  new Intent(PasswordActivity.this, MoodFragment.class);
+//                startActivity(lupaPass);
+//                break;
         }
     }
 }

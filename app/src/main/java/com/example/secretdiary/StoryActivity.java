@@ -8,13 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class StoryActivity extends AppCompatActivity implements View.OnClickListener{
+    Button btnKembali;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
 
-        Button btnKembali = (Button) findViewById(R.id.btn_kembali);
+        btnKembali = (Button) findViewById(R.id.btn_kembali);
         btnKembali.setOnClickListener((View.OnClickListener) this);
     }
 
@@ -22,8 +23,8 @@ public class StoryActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v){
         switch(v.getId()){
             case R.id.btn_kembali:
-            Intent btn_kembali = new Intent(StoryActivity.this, MainActivity.class);
-            startActivity(btn_kembali);
+            Intent intent = new Intent(StoryActivity.this, MainActivity.class);
+            startActivity(intent);
 
         }
     }
