@@ -15,16 +15,16 @@ public class StoryActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
 
-        btnKembali = (Button) findViewById(R.id.btn_kembali);
+//        btnKembali = (Button) findViewById(R.id.btn_kembali);
         btnKembali.setOnClickListener((View.OnClickListener) this);
     }
 
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.btn_kembali:
-            Intent intent = new Intent(StoryActivity.this, MainActivity.class);
-            startActivity(intent);
+//            case R.id.btn_kembali:
+//            Intent intent = new Intent(StoryActivity.this, MainActivity.class);
+//            startActivity(intent);
 
         }
     }

@@ -19,6 +19,7 @@
         <activity android:name=".PasswordActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".StoryActivity"></activity>
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>
