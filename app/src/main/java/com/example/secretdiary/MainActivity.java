@@ -7,6 +7,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
+import androidx.appcompat.widget.ActionMenuView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -17,6 +18,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Toolbar;
 ;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TabLayout tabLayout;
     FrameLayout frameLayout;
     private View Fab_add;
+    private View Btn_setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Fab_add = findViewById(R.id.fab_add);
         Fab_add.setOnClickListener((View.OnClickListener) this);
+
+        Btn_setting = findViewById(R.id.btn_setting);
+        Btn_setting.setOnClickListener((View.OnClickListener) this);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -76,13 +82,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
-
     }
     @Override
-    public void onClick(View Fab_add){
-        if (Fab_add.getId()== R.id.fab_add) {
-            Intent fab_add = new Intent(MainActivity.this, StoryActivity.class);
-            startActivity(fab_add);
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.fab_add:
+                Intent fab_add = new Intent(MainActivity.this, StoryActivity.class);
+                startActivity(fab_add);
+            case R.id.btn_setting:
+                Intent btn_setting = new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(btn_setting);
         }
     }
 }
