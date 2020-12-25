@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Secret Diary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simpan">simpan</string>
+    <string name="judul">judul</string>
+    <string name="tulis_cerita">tulis_cerita</string>
+    <string name="pengingat_diary">Pengingat Diary</string>
+    <string name="my_profil">Profil Saya</string>
+    <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
+    <string name="ubah_tema">Ubah Tema</string>
+    <string name="setting">setting</string>
+    <string name="oke">oke</string>
+    <string name="lupa_kata_sandi">lupa kata sandi ?</string>
+    <string name="masukkan_kata_sandi">masukkan kata sandi</string>
+</resources>
