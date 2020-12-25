@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:adjustViewBounds="true"
+    android:cropToPadding="true"
+    android:background="@drawable/ic_bgpass"
+    tools:context=".PasswordActivity">
+
+    <ImageView
+        android:layout_width="114dp"
+        android:layout_height="95dp"
+        android:src="@drawable/ic_baseline_lock_24"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/masukkan_kata_sandi_baru"
+        android:textColor="#02093A"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/buatPass"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/form"
+        android:inputType="numberPassword" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_BuatPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:text="oke"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="350dp"
+        />
+
+
+
+
+
+</LinearLayout>
+

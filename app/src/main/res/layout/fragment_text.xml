@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".TextFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btn_fontText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Font"/>
+    <Button
+        android:id="@+id/btn_sizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"/>
+    <Button
+        android:id="@+id/btn_boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"/>
+    <Button
+        android:id="@+id/btn_italicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I"/>
+    <Button
+        android:id="@+id/btn_underlineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U"/>
+
+</LinearLayout>

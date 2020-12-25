@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecretDiary">
+        <activity android:name=".PengingatActvity"></activity>
+        <activity android:name=".BuatPassActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,11 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PasswordActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".StoryActivity"></activity>
-        <activity android:name=".SettingActivity"></activity>
-
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StoryActivity" />
+        <activity android:name=".SettingActivity" />
     </application>
 
 </manifest>
