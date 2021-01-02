@@ -16,4 +16,10 @@
     <string name="pengingat_diari">Pengingat Diari</string>
     <string name="atur_waktu">Atur Waktu</string>
     <string name="pengingat_diary">Pengingat Diary</string>
+    <string name="pesan_status_kamu">Pesan Status Kamu ?</string>
+    <string name="nama_kamu">Nama Kamu ?</string>
+    <string name="profil">Profil</string>
+    <string name="frasa_alarm">Frasa Alarm</string>
+    <string name="hobi">Hobi ?</string>
+    <string name="warna_favorite">Warna Favorite ?</string>
 </resources>
