@@ -10,10 +10,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.secretdiary.R;
-import com.example.secretdiary.RecyclerViewAdapter;
-import com.example.secretdiary.Story;
-
 import java.util.ArrayList;
 import java.util.List;
 

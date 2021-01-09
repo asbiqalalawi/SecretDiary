@@ -22,4 +22,8 @@
     <string name="frasa_alarm">Frasa Alarm</string>
     <string name="hobi">Hobi ?</string>
     <string name="warna_favorite">Warna Favorite ?</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="delete">Hapus</string>
 </resources>
